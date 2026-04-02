@@ -37,3 +37,4 @@ npm run test:headed
 
 - The login page labels the username field as `Username`; the suite uses the provided `admin` and `password123` credentials.
 - Each scenario logs in, opens the requested project board, finds the target column, verifies the task card, and asserts the expected tags.
+- Additional edge case coverage validates invalid login behavior, mobile viewport execution, displayed column counts, and empty-column rendering on the mobile board.
