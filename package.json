@@ -4,6 +4,11 @@
   "description": "Data-driven Playwright technical evaluation for LoopQA",
   "scripts": {
     "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
     "test:headed": "playwright test --headed",
     "report": "playwright show-report"
   },
@@ -12,6 +17,7 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.1",
     "@playwright/test": "^1.59.0",
     "tsx": "^4.21.0",
     "typescript": "^6.0.2"
